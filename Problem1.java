@@ -20,17 +20,13 @@ public class week13_1 {
 
         sort(list);
 
-        System.out.println(list);
+        list.forEach(num -> System.out.print(num + " "));
+        System.out.println();
     }
 
     public static void sort(ArrayList<Number> list) {
 
-         Collections.sort(list, new Comparator<Number>() {
-             @Override
-             public int compare(Number num1, Number num2) {
-                 return Double.compare(num1.doubleValue(), num2.doubleValue());
-             }
-         });
+    	list.sort(Comparator.comparingDouble(Number::doubleValue));
          
         
 
