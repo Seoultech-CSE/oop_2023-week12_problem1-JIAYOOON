@@ -21,14 +21,12 @@ public class week13_1 {
         sort(list);
 
         list.forEach(num -> System.out.print(num + " "));
-        System.out.println();
+        
     }
 
     public static void sort(ArrayList<Number> list) {
 
     	list.sort(Comparator.comparingDouble(Number::doubleValue));
          
-        
-
     }
 }
