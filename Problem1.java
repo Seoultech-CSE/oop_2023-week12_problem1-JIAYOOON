@@ -26,7 +26,7 @@ public class week13_1 {
     public static void sort(ArrayList<Number> list) {
 
          Collections.sort(list, new Comparator<Number>() {
-             //@Override
+             @Override
              public int compare(Number num1, Number num2) {
                  return Double.compare(num1.doubleValue(), num2.doubleValue());
              }
